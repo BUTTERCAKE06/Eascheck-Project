@@ -1,0 +1,46 @@
+name: my_flutter_app
+description: A new Flutter project.
+
+# เวอร์ชันของแอป (ตาม semantic versioning)
+version: 1.0.0+1
+
+# เวอร์ชันของ Flutter SDK ที่ต้องการ
+environment:
+  sdk: ">=3.1.0 <3.8.0"  # กำหนดให้เข้ากับเวอร์ชัน Flutter 3.7.2
+
+# Dependencies ที่ใช้ในแอป
+dependencies:
+  flutter:
+    sdk: flutter
+  fl_chart: ^0.70.2
+  url_launcher: ^6.0.12  # ปรับใช้เวอร์ชันที่รองรับ Flutter 3.7.2
+  cupertino_icons: ^1.0.2
+  material_color_utilities: 0.11.1  # ใช้เวอร์ชันที่รองรับ Flutter 3.7.2
+  vector_math: 2.1.4  # ใช้เวอร์ชันที่รองรับ Flutter 3.7.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  async: ^2.12.0  # ใช้เวอร์ชันที่รองรับ Flutter 3.7.2
+  fake_async: ^1.3.2  # ใช้เวอร์ชันที่รองรับ Flutter 3.7.2
+  leak_tracker: ^10.0.8  # ใช้เวอร์ชันที่รองรับ Flutter 3.7.2
+  lints: ^5.1.1  # ใช้เวอร์ชันที่รองรับ Flutter 3.7.2
+  vm_service: 14.3.1  # ใช้เวอร์ชันที่รองรับ Flutter 3.7.2
+
+# สำหรับกำหนด asset (รูปภาพ ไฟล์ต่าง ๆ)
+flutter:
+
+  uses-material-design: true
+
+  # ถ้ามีรูปภาพในโฟลเดอร์ assets
+  assets:
+    - assets/images/
+
+  # ถ้ามีฟอนต์ที่นำมาใช้เอง
+  # fonts:
+  #   - family: CustomFont
+  #     fonts:
+  #       - asset: assets/fonts/CustomFont-Regular.ttf
+  #       - asset: assets/fonts/CustomFont-Bold.ttf
+  #         weight: 700
